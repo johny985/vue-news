@@ -1,18 +1,14 @@
 <template>
-  <div>
-    news
+  <div >
+    <div v-for="item in this.$store.state.news"> {{item.title}}</div>
   </div>
 </template>
 
 <script>
-import { fetchNews } from '../api/index.js';
 
 export default {
   created() {
-    fetchNews()
-      .then(response => console.log(response))
-      .catch(error => console.log(error))
-    
+    this.$store.dispatch('FETCH_NEWS')
   }
 }
 </script>
