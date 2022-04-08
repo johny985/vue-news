@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import ToolBar from './components/ToolBar.vue';
+import ToolBar from "./components/ToolBar.vue";
 
 export default {
   components: {
     //pascal Case를 태그에 등록 할 때는 bash형식으로 가능
-    ToolBar
-  }
-}
+    ToolBar,
+  },
+};
 </script>
 
 <style>
